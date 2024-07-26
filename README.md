@@ -1,2 +1,2 @@
 # Froglux's GitHub Page
-Hello there! I'm Froglux.
+This repo is what [froglux.net](froglux.github.io) uses to run.
