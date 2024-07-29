@@ -1,9 +1,15 @@
-* {
+.align-center {
     text-align: center
 }
 
 .ibm-plex-mono-regular {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-mono-regular-bold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
 }
