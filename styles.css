@@ -1,5 +1,11 @@
 .align-center {
-    text-align: center
+    text-align: center;
+}
+
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .ibm-plex-mono-regular {
