@@ -18,19 +18,19 @@
 }
 
 .inter-display-semibold {
-    font-family: "InterDisplay", sans-serif;
+    font-family: "inter_display-semibold", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .ibm-plex-mono-light {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "ibm_plex_mono-light", monospace;
     font-weight: 300;
     font-style: normal;
 }
 
 .ibm-plex-mono-regular {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "ibm_plex_mono-regular", monospace;
     font-weight: 400;
     font-style: normal;
 }
