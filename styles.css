@@ -1,11 +1,20 @@
-.text-center {
-    text-align: center;
+@font-face {
+    font-family: "inter_display-semibold";
+    src: url("fonts/inter/display/InterDisplay-SemiBold.ttf") format("opentype");
 }
 
-.inter-semibold {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+@font-face {
+    font-family: "ibm_plex_mono-light";
+    src: url("fonts/ibm_plex_mono/IBMPlexMono-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "ibm_plex_mono-regular";
+    src: url("fonts/ibm_plex_mono/IBMPlexMono-Regular.ttf") format("opentype");
+}
+
+.text-center {
+    text-align: center;
 }
 
 .inter-display-semibold {
@@ -23,11 +32,5 @@
 .ibm-plex-mono-regular {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-style: normal;
-}
-
-.ibm-plex-mono-regular-bold {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: bold;
     font-style: normal;
 }
