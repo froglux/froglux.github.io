@@ -1,3 +1,11 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: light-dark();
+}
+
 @font-face {
     font-family: "inter_display-semibold";
     src: url("fonts/inter/display/InterDisplay-SemiBold.ttf") format("opentype");
