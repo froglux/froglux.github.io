@@ -42,3 +42,30 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+.border {
+    border: solid 10px;
+}
+
+.app-border-radius {
+    border-radius: 22.5%;
+}
+
+.animation {
+    animation: rainbow 2.5s linear 0s infinite;
+}
+
+@keyframes rainbow {
+    from {
+        color: rgb(255, 0, 0);
+    }
+    33% {
+        color: rgb(0, 255, 0);
+    }
+    66% {
+        color: rgb(0, 0, 255);
+    }
+    to {
+        color: rgb(255, 0, 0);
+    }
+}
