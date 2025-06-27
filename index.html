@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Froglux</title>
+		<title>froglux</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles.css">
 		<link rel="icon" type="image/x-icon" href="img/froglux-icon.png">
+		<style>
+			#main-content a {
+				text-decoration: none;
+				color: inherit;
+				display: inline-block;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1 class="ibm-plex-mono-regular text-center animation">Froglux</h1>
-		</header>
-		<main>
-			<div id="image" class="text-center">
-				<a href="https://www.youtube.com/@froglux">
-					<img src="https://yt3.googleusercontent.com/P3B8gRfOba4r7n6vbY4Kebj7vmuUw5iadmlYRmKNNGU59rRMsAyWT18ftsrNP631gOPQn111rw=s160-c-k-c0x00ffffff-no-rj" alt="Froglux on YouTube" class="border app-border-radius animation-border" style="width: 560px; height: 560px; object-fit: cover;">
-				</a>
-			</div>
-			<div id="games" class="text-center">
-				<a href="games/" class="ibm-plex-mono-regular animation">See some games here</a>
-			</div>
+		<main id="whole-content">
+			<h1 id="header" class="inter-display-semibold enlarge" style="font-size: 48pt; margin-bottom: 0;">froglux</h1>
+			<ul id="main-content" class="ibm-plex-mono-regular" style="font-size: 24pt;">
+				<li id="blog-button">
+					<a href="blog" class="enlarge underline">blog</a>
+				</li>
+				<li id="tools-button">
+					<a href="tools" class="enlarge underline">tools</a>
+				</li>
+				<li id="yt-button">
+					<a href="https://www.youtube.com/@froglux" class="enlarge underline">youtube</a>
+				</li>
+				<li id="about-button">
+					<a href="about" class="enlarge underline">about</a>
+				</li>
+			</ul>
 		</main>
-		<footer class="ibm-plex-mono-regular text-center">
-			<p class="animation" style="font-size: 32px;">© 2024 Froglux LLC</p>
-		</footer>
 	</body>
 </html>

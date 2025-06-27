@@ -73,13 +73,47 @@ body {
     border-radius: 22.5%;
 }
 
-.animation:hover {
+.rainbow-animation:hover {
     animation: rainbow 6s linear 0s infinite;
 }
 
-.animation-border:hover {
+.rainbow-animation-border:hover {
     border: solid 10px;
     animation: rainbow 6s linear 0s infinite;
+}
+
+.blandify {
+    color: inherit;
+}
+
+.enlarge {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.enlarge:hover {
+    transform: scale(1.2);
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.underline:hover::after {
+    width: 100%; /* Underline expands to full width on hover */
 }
 
 @keyframes rainbow {
@@ -95,4 +129,15 @@ body {
     to {
         color: rgb(255, 0, 0);
     }
+}
+
+#header {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+#main-content {
+    margin-left: 25%;
+    margin-right: 25%;
 }
