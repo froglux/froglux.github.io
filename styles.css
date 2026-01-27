@@ -131,13 +131,26 @@ body {
     }
 }
 
-#header {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 3%;
+.title-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nav-margin {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #main-content {
-    margin-left: 25%;
-    margin-right: 25%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#sidebar {
+    flex: 0 0 20%;
+}
+
+#info {
+    flex: 0 0 80%;
 }
