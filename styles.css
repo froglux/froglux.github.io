@@ -1,156 +1,21 @@
-:root {
-    color-scheme: light dark;
-}
+/*
+ * All main CSS is based on mobile (mobile-first design).
+ *
+ * Design ideology:
+ * "The 'breakpoints' then become the actual point at which your mobile design begins to
+ * 'break' i.e. cease to be usable or visually pleasing. Once you have a good working 
+ * mobile site, without media queries, you can stop being concerned about specific sizes
+ * and simply add media queries that handle successively larger viewports."
+ */
 
-body {
-    background-color: light-dark();
-}
+/* @media for scaling control */
 
-@font-face {
-    font-family: "inter_display-semibold";
-    src: url("fonts/inter/display/InterDisplay-SemiBold.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "inter-regular";
-    src: url("fonts/inter/normal/Inter-Regular.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "inter-medium";
-    src: url("fonts/inter/normal/Inter-Medium.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "ibm_plex_mono-light";
-    src: url("fonts/ibm_plex_mono/IBMPlexMono-Light.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "ibm_plex_mono-regular";
-    src: url("fonts/ibm_plex_mono/IBMPlexMono-Regular.ttf") format("opentype");
-}
-
-.text-center {
-    text-align: center;
-}
-
-.inter-display-semibold {
-    font-family: "inter_display-semibold", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.inter-regular {
-    font-family: "inter-regular", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.inter-medium {
-    font-family: "inter-medium", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.ibm-plex-mono-light {
-    font-family: "ibm_plex_mono-light", monospace;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.ibm-plex-mono-regular {
-    font-family: "ibm_plex_mono-regular", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.border {
-    border: solid 10px white;
-}
-
-.app-border-radius {
-    border-radius: 22.5%;
-}
-
-.rainbow-animation:hover {
-    animation: rainbow 6s linear 0s infinite;
-}
-
-.rainbow-animation-border:hover {
-    border: solid 10px;
-    animation: rainbow 6s linear 0s infinite;
-}
-
-.blandify {
-    color: inherit;
-}
-
-.enlarge {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.enlarge:hover {
-    transform: scale(1.2);
-}
-
-.underline {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-}
-
-.underline::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #FFFFFF;
-    transition: width 0.3s ease;
-}
-
-.underline:hover::after {
-    width: 100%; /* Underline expands to full width on hover */
-}
-
-@keyframes rainbow {
-    from {
-        color: rgb(255, 0, 0);
-    }
-    33% {
-        color: rgb(0, 255, 0);
-    }
-    67% {
-        color: rgb(0, 0, 255);
-    }
-    to {
-        color: rgb(255, 0, 0);
-    }
-}
-
-.title-margin {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.main-margin {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#main-content {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
-#sidebar {
-    flex: 0 0 20%;
-}
-
-#info {
-    flex: 0 0 80%;
+/* 
+ * Stack sections using CSS grid and container sections 
+ *	- <section> should scale properly since all inner elements are based on size of section
+ */
+ @media screen and (min-width: 900px) {
+	#dashboard {
+		grid-column: 1 / span var(--grid-columns);
+	}
 }
